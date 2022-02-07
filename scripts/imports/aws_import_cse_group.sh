@@ -2,7 +2,11 @@
 
 export CONFIG_DIR="/home/ec2-user/config/"
 
-export SNYK_LOG_PATH="${CONFIG_DIR}cache/logs"
+today=$(date --iso)
+
+export SNYK_LOG_PATH="${CONFIG_DIR}cache/logs/${today}"
+
+mkdir -p $SNYK_LOG_PATH
 
 export SNYK_TOKEN=$SNYK_TOKEN_cse_group
 
