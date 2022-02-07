@@ -1,0 +1,1 @@
+2 1 * * * /home/ec2-user/bin/aws_cron.sh 1>/dev/null 2>&1
